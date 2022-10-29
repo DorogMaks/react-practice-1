@@ -8,11 +8,6 @@ import {
   CryptoHistory,
 } from 'components';
 
-import article from 'data/article.json';
-import forbes from 'data/forbes.json';
-
-import { statistics } from './helpers';
-
 export const App = () => {
   return (
     <Section>
@@ -20,25 +15,17 @@ export const App = () => {
         <Heading marginBottom="50px" textAlign="center">
           Task 1
         </Heading>
-        <BlogCard
-          poster={article.poster}
-          tag={article.tag}
-          title={article.title}
-          description={article.description}
-          userName={article.name}
-          avatar={article.avatar}
-          postedAt={article.postedAt}
-        />
+        <BlogCard />
 
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 2
         </Heading>
-        <Statistics title="Main Statistics" stats={statistics} />
+        <Statistics />
 
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 3
         </Heading>
-        <ForbesList list={forbes} />
+        <ForbesList />
 
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 4
